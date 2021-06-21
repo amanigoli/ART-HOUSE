@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+html {
+	height:100%;
+}
+body {
+	height:100%;
+	background-color:olive;
+}
+#mainpara {
+	width:70%;
+	margin:0 auto;
+	padding:0;
+	border-radius:10px;
+	background-color:gray;
+	text-align:center;
+}
+#header, #topleft {
+	list-style:none;
+	text-align:center;
+}
+#header li a, #topleft li a, #header ul li a {
+	text-decoration:none;
+	padding:0 1em;
+}
+#topleft {
+	float:right;
+}
+#header, #header ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#topleft li {
+	float:left;
+	margin:0 1em 0 0;
+	background-color:lightgray;
+}
+#header {
+	display:inline-block;
+	font-size: 150%;
+	margin:10px 0 0;
+}
+#header > li {
+	display: inline-block;
+	margin: 0 10px 10px 0;
+	background-color: lime;
+}
+#header  li{	position:relative;}
+#header li a {
+	display:block;
+	padding:5px 15px;
+}
+#header ul {
+	position:absolute;
+	top:100%;
+	left:0;
+	margin-left:-999em;
+	width:200px;
+	background:red;
+}
+#header li:hover {
+	background-color: red;
+}
+#header ul li {
+	display:block;
+	text-align:left;
+	font-size:16px;
+	margin:0;
+}
+#header ul li a{padding:10px;}
+#header li:hover > ul {
+	margin:0;
+}
+#header li li:hover a{background:teal}
+#header li li:hover > ul {
+	margin:0;
+	left:100%;
+	top:0;
+	background:teal;
+}
+#header li li li:hover a{background:green}
+</style>
+</head>
+
+<body>
+<div id="mainpara">
+		<ul id="topleft">
+				<li><a href="#">Login</a></li>
+				<li><a href="#">Sign Up</a></li>
+		</ul>
+		<ul id="header">
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Services</a>
+						<ul>
+								<li><a href="#">WebDesign </a> </li>
+								<li><a href="#">Android App &raquo;</a>
+										<ul>
+												<li><a href="#">Sub Sub link 1</a></li>
+												<li><a href="#">Sub Sub link 2</a></li>
+												<li><a href="#">Sub Sub link 3</a></li>
+										</ul>
+								</li>
+								<li><a href="#">Bulk SMS</a></li>
+						</ul>
+				</li>
+				<li><a href="#">Courses</a></li>
+				<li><a href="#">Contact Us</a></li>
+		</ul>
+</div>
+</body>
+</html>
